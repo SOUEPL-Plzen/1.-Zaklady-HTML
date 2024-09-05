@@ -1,9 +1,8 @@
 # Webové technologie - HTML
 Pro lepší pochopení HTML tagu a syntaxe doporučuji si stahnout repozitář a stránky s prohlédnout a spusit. V headu najdete i tag pro style, ten prosím neměňte a nevšímejte si ho, slouží pro vizualizaci stránky a lepší pochopení html tagu apod.
 
-## V čem programujeme?
-
 # Práce s Visual Studio Code (VSC)
+Práce v hodinách bude probíhat hlavně v tomto programovacím prostředí z důvodu jeho flexibility a rozšířenosti v praxi.
 
 ## Co je Visual Studio Code?
 **Visual Studio Code (VSC)** je populární editor kódu, který je zdarma a podporuje různé programovací jazyky, včetně HTML, CSS, JavaScriptu a dalších. Poskytuje funkce jako integrovaný terminál, rozšíření pro různé nástroje a snadné použití.
