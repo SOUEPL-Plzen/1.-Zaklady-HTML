@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Základy - Příručka</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            }
+            h1, h2 {
+            color: #2c3e50;
+            }
+            .example {
+            background-color: #ecf0f1;
+            padding: 10px;
+            margin-bottom: 20px;
+            }
+            code {
+            background-color: #e1e1e1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+
+    <h1>Základní HTML tagy a jejich atributy</h1>
+
+    <p>Tato příručka obsahuje přehled základních HTML tagů a jejich atributů, včetně semantických tagů a atributů pro vstupní pole (input).</p>
+
+    <!-- Základní tagy -->
+    <h2>1. Základní HTML tagy</h2>
+    
+    <!-- Tag <p> - Odstavec -->
+    <h3>&lt;p&gt; - Odstavec</h3>
+    <p>
+        Tag <code>&lt;p&gt;</code> se používá pro vytváření odstavců. Tento tag má sémantický význam a je využíván pro formátování textu.
+    </p>
+    <div class="example">
+        <p>Toto je příklad odstavce.</p>
+    </div>
+
+    <!-- Tag <a> - Odkaz -->
+    <h3>&lt;a&gt; - Odkaz</h3>
+    <p>
+        Tag <code>&lt;a&gt;</code> vytváří hypertextový odkaz. Atribut <code>href</code> specifikuje URL, na kterou odkazuje.
+    </p>
+    <div class="example">
+        <a href="https://www.example.com">Klikni sem pro návštěvu stránky</a>
+    </div>
+
+    <!-- Popis tlačítka -->
+    <h2>&lt;button&gt; - Tlačítko</h2>
+    <p>
+    Tag <code>&lt;button&gt;</code> slouží k vytvoření klikatelného tlačítka. Tlačítko může být použito pro odesílání formulářů, spouštění JavaScriptu nebo jakoukoli jinou interakci s uživatelem.
+    </p>
+    <div class="example">
+    <button>Klikněte zde</button>
+    <!-- Toto je příklad základního tlačítka vytvořeného tagem <button> -->
+    </div>
+
+    <!-- Nadpisy H1 - H5 -->
+    <h2>&lt;h1&gt; - &lt;h5&gt; Nadpisy</h2>
+    <p>
+    HTML nabízí šest úrovní nadpisů, od největšího <code>&lt;h1&gt;</code> po nejmenší <code>&lt;h6&gt;</code>. Zde jsou příklady použití nadpisů od <code>&lt;h1&gt;</code> po <code>&lt;h5&gt;</code>:
+    </p>
+    <div class="example">
+    <h1>Toto je H1 nadpis</h1>
+    <!-- Tag <h1> je největší a nejvýznamnější nadpis, obvykle pro hlavní nadpis stránky -->
+
+    <h2>Toto je H2 nadpis</h2>
+    <!-- Tag <h2> je druhý největší nadpis, používá se pro sekce stránky -->
+
+    <h3>Toto je H3 nadpis</h3>
+    <!-- Tag <h3> je používán pro menší podsekce -->
+
+    <h4>Toto je H4 nadpis</h4>
+    <!-- Tag <h4> je používán pro ještě menší podsekce -->
+
+    <h5>Toto je H5 nadpis</h5>
+    <!-- Tag <h5> je často používán pro vedlejší informace -->
+    </div>
+
+
+    <!-- Popis div a span -->
+    <h2>2. Tagy &lt;div&gt; a &lt;span&gt;</h2>
+    
+    <!-- Tag <div> -->
+    <h3>&lt;div&gt; - Oddíl</h3>
+    <p>
+        Tag <code>&lt;div&gt;</code> je blokový element, který se používá k seskupení dalších HTML elementů do sekce nebo oddílu. Často se používá pro layouty.
+    </p>
+    <div class="example">
+        <div>
+        Toto je oddíl vytvořený pomocí tagu &lt;div&gt;.
+        </div>
+    </div>
+
+    <!-- Tag <span> -->
+    <h3>&lt;span&gt; - Inline element</h3>
+    <p>
+        Tag <code>&lt;span&gt;</code> je inline element a používá se k seskupení textu nebo jiných inline elementů, obvykle za účelem stylování. Na rozdíl od <code>&lt;div&gt;</code> nezasahuje do layoutu.
+    </p>
+    <div class="example">
+        <span style="color: red;">Tento text je červený.</span>
+    </div>
+
+    <!-- Všechny typy inputů -->
+    <h2>3. Atributy inputů</h2>
+
+    <h3>&lt;input&gt; - Vstupní pole</h3>
+    <p>
+        Tag <code>&lt;input&gt;</code> slouží k vytváření různých druhů vstupních polí. Níže jsou všechny typy vstupních polí, které HTML podporuje.
+    </p>
+
+    <!-- Textový vstup -->
+    <h4>Textový vstup</h4>
+    <p>
+        <code>type="text"</code> vytváří textové pole.
+    </p>
+    <div class="example">
+        <input type="text" placeholder="Zadejte text">
+    </div>
+
+    <!-- Checkbox -->
+    <h4>Checkbox</h4>
+    <p>
+        <code>type="checkbox"</code> vytváří zaškrtávací políčko.
+    </p>
+    <div class="example">
+        <label><input type="checkbox"> Souhlasím s podmínkami</label>
+    </div>
+
+    <!-- Radio -->
+    <h4>Radio Button</h4>
+    <p>
+        <code>type="radio"</code> vytváří tlačítko pro výběr jedné možnosti ze skupiny.
+    </p>
+    <div class="example">
+        <label><input type="radio" name="gender"> Muž</label>
+        <label><input type="radio" name="gender"> Žena</label>
+    </div>
+
+    <!-- Výběr barvy -->
+    <h4>Výběr barvy</h4>
+    <p>
+        <code>type="color"</code> umožňuje výběr barvy.
+    </p>
+    <div class="example">
+        <input type="color">
+    </div>
+
+    <!-- Heslo -->
+    <h4>Heslo</h4>
+    <p>
+        <code>type="password"</code> vytváří pole pro zadání hesla, kde se znaky skryjí.
+    </p>
+    <div class="example">
+        <input type="password" placeholder="Zadejte heslo">
+    </div>
+
+    <!-- Datum -->
+    <h4>Výběr data</h4>
+    <p>
+        <code>type="date"</code> vytváří pole pro výběr data.
+    </p>
+    <div class="example">
+        <input type="date">
+    </div>
+
+    <!-- Email -->
+    <h4>Email</h4>
+    <p>
+        <code>type="email"</code> vytváří pole pro zadání emailové adresy.
+    </p>
+    <div class="example">
+        <input type="email" placeholder="Zadejte email">
+    </div>
+
+    <!-- Soubor -->
+    <h4>Výběr souboru</h4>
+    <p>
+        <code>type="file"</code> umožňuje výběr souboru z počítače.
+    </p>
+    <div class="example">
+        <input type="file">
+    </div>
+
+    <!-- Range -->
+    <h4>Rozsah (slider)</h4>
+    <p>
+        <code>type="range"</code> vytváří posuvník pro výběr číselné hodnoty.
+    </p>
+    <div class="example">
+        <input type="range" min="0" max="100">
+    </div>
+
+    <!-- Telefon -->
+    <h4>Telefonní číslo</h4>
+    <p>
+        <code>type="tel"</code> vytváří pole pro zadání telefonního čísla.
+    </p>
+    <div class="example">
+        <input type="tel" placeholder="Zadejte telefonní číslo">
+    </div>
+
+    <!-- URL -->
+    <h4>URL</h4>
+    <p>
+        <code>type="url"</code> vytváří pole pro zadání URL adresy.
+    </p>
+    <div class="example">
+        <input type="url" placeholder="Zadejte URL adresu">
+    </div>
+
+    <!-- Semantické tagy -->
+    <h2>4. Semantické HTML tagy</h2>
+
+    <!-- Article -->
+    <h3>&lt;article&gt;</h3>
+    <p>
+        Tag <code>&lt;article&gt;</code> představuje samostatný a nezávislý obsah, jako například článek nebo blogový příspěvek.
+    </p>
+    <div class="example">
+        <article>
+        <h2>Název článku</h2>
+        <p>Tento článek je o nejnovějších trendech v technologiích...</p>
+        </article>
+    </div>
+
+    <!-- Aside -->
+    <h3>&lt;aside&gt;</h3>
+    <p>
+        Tag <code>&lt;aside&gt;</code> představuje obsah vedlejšího významu, který doplňuje hlavní obsah stránky.
+    </p>
+    <div class="example">
+        <aside>
+        <p>Vedlejší informace nebo reklama.</p>
+        </aside>
+    </div>
+
+    <!-- Details a Summary -->
+    <h3>&lt;details&gt; a &lt;summary&gt;</h3>
+    <p>
+        Tag <code>&lt;details&gt;</code> umožňuje vytvořit rozbalovací obsah. Tag <code>&lt;summary&gt;</code> určuje nadpis rozbalitelného obsahu.
+    </p>
+    <div class="example">
+        <details>
+        <summary>Klikněte sem pro více informací</summary>
+        <p>Zde je skrytý obsah, který se zobrazí po kliknutí.</p>
+        </details>
+    </div>
+
+    <!-- Figure a Figcaption -->
+    <h3>&lt;figure&gt; a &lt;figcaption&gt;</h3>
+    <p>
+        Tag <code>&lt;figure&gt;</code> představuje samostatný obsah, například obrázek. Tag <code>&lt;figcaption&gt;</code> přidává popis tohoto obsahu.
+    </p>
+    <div class="example">
+        <figure>
+        <img src="https://via.placeholder.com/150" alt="Příklad obrázku">
+        <figcaption>Popis obrázku</figcaption>
+        </figure>
+    </div>
+
+    <!-- Footer -->
+    <h3>&lt;footer&gt;</h3>
+    <p>
+        Tag <code>&lt;footer&gt;</code> představuje patičku stránky nebo sekce.
+    </p>
+    <div class="example">
+        <footer>
+        <p>&copy; 2024 Moje stránka. Všechna práva vyhrazena.</p>
+        </footer>
+    </div>
+
+    <!-- Header -->
+    <h3>&lt;header&gt;</h3>
+    <p>
+        Tag <code>&lt;header&gt;</code> představuje hlavičku stránky nebo sekce, obvykle obsahuje nadpisy a navigaci.
+    </p>
+    <div class="example">
+        <header>
+        <h1>Hlavička stránky</h1>
+        <nav>
+            <ul>
+            <li><a href="#home">Domů</a></li>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        </header>
+    </div>
+
+    <!-- Main -->
+    <h3>&lt;main&gt;</h3>
+    <p>
+        Tag <code>&lt;main&gt;</code> představuje hlavní obsah stránky.
+    </p>
+    <div class="example">
+        <main>
+        <p>Toto je hlavní obsah stránky.</p>
+        </main>
+    </div>
+
+    <!-- Mark -->
+    <h3>&lt;mark&gt;</h3>
+    <p>
+        Tag <code>&lt;mark&gt;</code> zvýrazňuje text.
+    </p>
+    <div class="example">
+        <p>Zde je <mark>zvýrazněný text</mark> v odstavci.</p>
+    </div>
+
+    <!-- Nav -->
+    <h3>&lt;nav&gt;</h3>
+    <p>
+        Tag <code>&lt;nav&gt;</code> představuje navigační oblast stránky.
+    </p>
+    <div class="example">
+        <nav>
+        <ul>
+            <li><a href="#home">Domů</a></li>
+            <li><a href="#services">Služby</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        </nav>
+    </div>
+
+    <!-- Section -->
+    <h3>&lt;section&gt;</h3>
+    <p>
+        Tag <code>&lt;section&gt;</code> představuje samostatnou část obsahu, například kapitolu nebo oddíl.
+    </p>
+    <div class="example">
+        <section>
+        <h2>Název sekce</h2>
+        <p>Toto je obsah sekce.</p>
+        </section>
+    </div>
+
+    <!-- Time -->
+    <h3>&lt;time&gt;</h3>
+    <p>
+        Tag <code>&lt;time&gt;</code> představuje časový údaj nebo datum.
+    </p>
+    <div class="example">
+        <time datetime="2024-09-05">5. září 2024</time>
+    </div>
+
+    </body>
+</html>

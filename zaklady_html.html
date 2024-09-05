@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- Deklarace typu dokumentu (DOCTYPE) říká prohlížeči, že tento dokument je HTML5 -->
+<html lang="cs">
+<!-- Tag <html> je párový tag a označuje začátek a konec HTML dokumentu. Atribut lang="cs" specifikuje jazyk stránky -->
+<head>
+  <!-- Tag <head> obsahuje metadata a informace pro prohlížeč, nikoli pro uživatele -->
+  
+  <meta charset="UTF-8">
+  <!-- Meta tag s atributem charset určuje kódování znaků. UTF-8 je standardní kódování pro většinu moderních stránek -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta tag viewport zajišťuje, že se stránka bude správně zobrazovat na mobilních zařízeních tím, že nastaví šířku zobrazení na šířku zařízení -->
+  
+  <title>Základní principy HTML5</title>
+  <!-- Tag <title> určuje název stránky, který se zobrazuje v záložce prohlížeče -->
+
+  <style>
+    /* Definice jednoduchého CSS stylu pro lepší čitelnost stránky */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .example {
+      background-color: #ecf0f1;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-left: 5px solid #3498db;
+    }
+    code {
+      background-color: #e1e1e1;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+  <!-- Tag <style> uvnitř <head> obsahuje CSS pro úpravu vzhledu stránky -->
+
+</head>
+
+<body>
+  <!-- Tag <body> obsahuje veškerý obsah stránky, který se zobrazí uživatelům -->
+
+  <h1>Základní principy HTML5</h1>
+  <p>
+    HTML5 je nejnovější verze jazyka pro strukturování webových stránek. HTML označuje základní prvky, jako jsou nadpisy, odstavce, odkazy a další.
+  </p>
+
+  <!-- Párové vs. nepárové tagy -->
+  <h2>Párové a nepárové tagy</h2>
+  <p>
+    V HTML existují dva druhy tagů: <strong>párové</strong> a <strong>nepárové</strong> (samozavírací).
+  </p>
+  <h3>Párové tagy</h3>
+  <p>
+    Párové tagy se skládají z otevíracího a uzavíracího tagu. Uzavírací tag obsahuje lomítko (např. <code>&lt;/p&gt;</code>). Příklad:
+  </p>
+  <div class="example">
+    <p>Toto je odstavec vytvořený párovým tagem &lt;p&gt;.</p>
+    <!-- Toto je příklad párového tagu <p> -->
+  </div>
+
+  <h3>Nepárové tagy</h3>
+  <p>
+    Nepárové tagy nemají uzavírací tag a samy se zavírají. Příklad nepárového tagu <code>&lt;img&gt;</code>:
+  </p>
+  <div class="example">
+    <img src="https://via.placeholder.com/150" alt="Příklad obrázku">
+    <!-- Tag <img> je nepárový (samozavírací) tag -->
+  </div>
+
+  <!-- Popis části <head> -->
+  <h2>Část <code>&lt;head&gt;</code></h2>
+  <p>
+    Část <code>&lt;head&gt;</code> obsahuje informace pro prohlížeč, které se obvykle nezobrazují na stránce. Tato část může obsahovat:
+  </p>
+  <ul>
+    <li><code>&lt;title&gt;</code>: Název stránky, který se zobrazuje v záložce prohlížeče.</li>
+    <li><code>&lt;meta&gt;</code>: Meta tagy slouží k poskytování informací o stránce, jako je kódování znaků, popis nebo klíčová slova.</li>
+    <li><code>&lt;link&gt;</code>: Pro připojení externích zdrojů, například souborů CSS nebo ikon.</li>
+    <li><code>&lt;style&gt;</code>: Místní CSS, které ovlivňuje vzhled stránky.</li>
+    <li><code>&lt;script&gt;</code>: Místní JavaScript, který může ovlivnit chování stránky.</li>
+  </ul>
+
+  <!-- Tagy v praxi -->
+  <h2>HTML tagy v praxi</h2>
+  <p>Zde jsou příklady použití některých běžných HTML tagů:</p>
+
+  <!-- Nadpisy -->
+  <h3>Nadpisy (Heading Tags)</h3>
+  <p>
+    HTML nabízí šest úrovní nadpisů od <code>&lt;h1&gt;</code> (největší) po <code>&lt;h6&gt;</code> (nejmenší):
+  </p>
+  <div class="example">
+    <h1>H1 Nadpis</h1>
+    <h2>H2 Nadpis</h2>
+    <h3>H3 Nadpis</h3>
+    <h4>H4 Nadpis</h4>
+    <h5>H5 Nadpis</h5>
+    <h6>H6 Nadpis</h6>
+  </div>
+
+  <!-- Odkazy -->
+  <h3>Odkazy (Anchor Tags)</h3>
+  <p>
+    Tag <code>&lt;a&gt;</code> slouží k vytvoření odkazu. Atribut <code>href</code> určuje cílovou URL:
+  </p>
+  <div class="example">
+    <a href="https://www.example.com">Klikněte sem pro návštěvu stránky</a>
+    <!-- Toto je příklad odkazu -->
+  </div>
+
+  <!-- Obrázky -->
+  <h3>Obrázky (Image Tags)</h3>
+  <p>
+    Tag <code>&lt;img&gt;</code> slouží k zobrazení obrázku. Atribut <code>src</code> definuje cestu k obrázku a <code>alt</code> poskytuje alternativní text pro obrázek:
+  </p>
+  <div class="example">
+    <img src="https://via.placeholder.com/150" alt="Příklad obrázku">
+    <!-- Toto je příklad nepárového tagu <img> -->
+  </div>
+
+  <!-- Seznamy -->
+  <h3>Seznamy (Lists)</h3>
+  <p>
+    HTML podporuje číslované a nečíslované seznamy pomocí tagů <code>&lt;ul&gt;</code> (nečíslovaný seznam) a <code>&lt;ol&gt;</code> (číslovaný seznam):
+  </p>
+  <div class="example">
+    <h4>Nečíslovaný seznam:</h4>
+    <ul>
+      <li>Položka 1</li>
+      <li>Položka 2</li>
+      <li>Položka 3</li>
+    </ul>
+
+    <h4>Číslovaný seznam:</h4>
+    <ol>
+      <li>Položka 1</li>
+      <li>Položka 2</li>
+      <li>Položka 3</li>
+    </ol>
+  </div>
+
+  <!-- Závěr -->
+  <h2>Závěr</h2>
+  <p>
+    HTML5 poskytuje bohatou sadu nástrojů pro tvorbu webových stránek, včetně nových tagů, jako jsou sémantické tagy, vylepšené formuláře a lepší podpora multimédií.
+  </p>
+
+</body>
+</html>
